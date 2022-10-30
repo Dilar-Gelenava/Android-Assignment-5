@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/carAddLayout"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/cardview_dark_background">
+
+        <EditText
+            android:id="@+id/carNameInput"
+            android:hint="Enter Car Name"
+            style="@style/carAddInput" />
+
+        <EditText
+            android:id="@+id/carEngineInput"
+            android:hint="Enter Car Engine"
+            style="@style/carAddInput"/>
+
+        <EditText
+            android:id="@+id/carYearOfReleaseInput"
+            android:hint="Enter Car Year of Release"
+            style="@style/carAddInput"/>
+
+        <Button
+            android:id="@+id/saveCarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Save"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
